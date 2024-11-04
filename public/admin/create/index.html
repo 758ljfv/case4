@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Для адаптивности -->
+    <title>Создание анкеты</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body onload="initializeHeader()">
+<div class="container">
+    <h1 class="mb-4">Создание анкеты</h1>
+
+    <div class="mb-3">
+        <a href="/admin" class="btn btn-secondary">Вернуться</a>
+    </div>
+
+    <form id="surveyForm">
+        <div class="form-group">
+            <label for="surveyTitle">Название анкеты:</label>
+            <input type="text" class="form-control" id="surveyTitle" placeholder="Введите название анкеты" required>
+        </div>
+
+        <div id="questionsContainer">
+            <!-- Здесь будут вопросы -->
+        </div>
+
+        <button type="button" id="addQuestion" class="btn btn-primary mt-3">Добавить вопрос</button>
+        <button type="submit" class="btn btn-success mt-3">Сохранить анкету</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/assets/js/header.js" defer></script>
+<script src="/assets/js/admin.js" defer></script>
+<script src="/assets/js/survey_add.js" defer></script>
+</body>
+</html>
